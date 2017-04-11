@@ -1,0 +1,22 @@
+.example-card {
+    position: relative;
+    left: 20%;
+    padding: 5%;
+    width: 60%;
+}
+
+.divider {
+    margin: 50px;
+}
+
+.titleSize {
+    font-size: 24px;
+}
+
+.subtitleSize {
+    font-size: 16px;
+}
+
+.audio {
+    width: 100%
+}

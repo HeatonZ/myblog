@@ -1,0 +1,67 @@
+<div class="navbar navbar-primary navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" routerLink="/">Sam</a>
+
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <button routerLink="/home" routerLinkActive="active" type="button" class="btn btn-primary">首页</button>
+                </li>
+                <li>
+                    <button routerLink="/add" routerLinkActive="active" type="button" class="btn btn-primary">添加</button>
+                </li>
+                <li>
+                    <button routerLink="/mv" routerLinkActive="active" type="button" class="btn btn-primary">MV</button>
+                </li>
+                <li>
+                    <button routerLink="/message" routerLinkActive="active" type="button" class="btn btn-primary">留言</button>
+                </li>
+                <li>
+                    <button routerLink="/help" routerLinkActive="active" type="button" class="btn btn-primary">帮助</button>
+                </li>
+                <li>
+                    <button routerLink="/other" routerLinkActive="active" type="button" class="btn btn-primary">其他未知的</button>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <button routerLink="/change" routerLinkActive="active" type="button" class="btn btn-primary">个人设置</button>
+                </li>
+                <li>
+                    <button routerLink="/profile" routerLinkActive="active" type="button" class="btn btn-primary">个人中心</button>
+                </li>
+                <li>
+                    <button routerLink="/login" routerLinkActive="active" type="button" class="btn btn-primary">登录</button>
+                </li>
+                <li>
+                    <button routerLink="/signup" routerLinkActive="active" type="button" class="btn btn-primary">注册</button>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="divider">
+
+</div>
+
+
+
+<router-outlet>
+
+
+
+
+</router-outlet>

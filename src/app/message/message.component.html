@@ -1,0 +1,17 @@
+<div class="panel panel-default" style="padding:3%">
+    <div class="panel-body">
+        <div>
+            留言：{{msg}}
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default" style="padding:3%">
+    <div class="panel-body">
+        <md-input-container class="example-full-width">
+
+            <textarea mdInput placeholder="留言" style="height: 200px" [(ngModel)]="msg"></textarea>
+        </md-input-container>
+        <button md-button>确定</button>
+    </div>
+</div>

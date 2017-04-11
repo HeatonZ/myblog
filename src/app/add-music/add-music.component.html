@@ -1,0 +1,33 @@
+<div class="panel panel-default" style="padding:3%">
+    <div class="panel-body">
+        <div class="addcenter input-group">
+            <input [(ngModel)]="name" type="text" class="form-control" placeholder="搜索歌曲名"  aria-describedby="basic-addon2">
+            <button><span class="input-group-addon" id="basic-addon2"  (click)="boom()">确定</span></button>
+
+        </div>
+        <div class="addcenter input-group">
+            <input [(ngModel)]="id" type="text" class="form-control" placeholder="歌曲ID"  aria-describedby="basic-addon2">
+            <button>  <span class="input-group-addon" id="basic-addon2" (click)="ok()">添加</span></button>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default" style="padding:3%">
+    <div class="panel-body">
+        <table class="table table-hover">
+            <td> 歌曲名
+                <tr *ngFor="let musicInfo of musicInfos">{{musicInfo.name}}</tr>
+            </td>
+            <td> 歌手
+                <tr *ngFor="let musicInfo of musicInfos">{{musicInfo.singer}}</tr>
+            </td>
+            <td> 专辑
+                <tr *ngFor="let musicInfo of musicInfos">{{musicInfo.album}}</tr>
+            </td>
+            <td> 添加
+                <tr *ngFor="let musicInfo of musicInfos">{{musicInfo.id}}</tr>
+            </td>
+
+        </table>
+    </div>
+</div>
